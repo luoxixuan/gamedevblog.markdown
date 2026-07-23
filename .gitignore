@@ -28,3 +28,8 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# VitePress
+node_modules/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
