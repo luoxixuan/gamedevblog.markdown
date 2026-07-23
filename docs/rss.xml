@@ -1,0 +1,90 @@
+---
+layout: page
+---
+<script setup>
+import { useData } from 'vitepress'
+const { theme, page } = useData()
+</script>
+
+<RSSFeed />
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>游戏开发博客</title>
+    <link>https://luoxixuan.github.io/gamedevblog.markdown/</link>
+    <description>一个游戏客户端开发者的个人知识库 — C++ / Unity / ECS / 渲染 / 工程方法论</description>
+    <language>zh-CN</language>
+    <atom:link href="https://luoxixuan.github.io/gamedevblog.markdown/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>GAS技能系统实现</title>
+      <link>https://luoxixuan.github.io/gamedevblog.markdown/blog/框架设计_004-GAS技能系统实现</link>
+      <description>Ability/Effect/Attribute 三层架构、AreaShape 驱动的目标选择、从硬编码到 JSON 配置驱动</description>
+      <guid>https://luoxixuan.github.io/gamedevblog.markdown/blog/框架设计_004-GAS技能系统实现</guid>
+    </item>
+
+    <item>
+      <title>NPC记忆系统设计</title>
+      <link>https://luoxixuan.github.io/gamedevblog.markdown/blog/框架设计_003-NPC记忆系统设计</link>
+      <description>三层架构（BattleBehaviorTracker + NPCMemory + 决策消费层）、JSON 持久化、行为驱动的剧情分支</description>
+      <guid>https://luoxixuan.github.io/gamedevblog.markdown/blog/框架设计_003-NPC记忆系统设计</guid>
+    </item>
+
+    <item>
+      <title>游戏战斗系统设计 — 火焰纹章 FE7 公式还原</title>
+      <link>https://luoxixuan.github.io/gamedevblog.markdown/blog/框架设计_002-游戏战斗系统设计</link>
+      <description>2RN 真命中、攻速 AS 制、武器相克、战斗预览面板、经验系统</description>
+      <guid>https://luoxixuan.github.io/gamedevblog.markdown/blog/框架设计_002-游戏战斗系统设计</guid>
+    </item>
+
+    <item>
+      <title>ECS并行安全的工程实践</title>
+      <link>https://luoxixuan.github.io/gamedevblog.markdown/blog/知识点_006-ECS并行安全的工程实践</link>
+      <description>两阶段模式（并行收集 + 串行apply）、damage queue 设计原则、ConcurrentBag vs Dictionary、实战 bug 案例</description>
+      <guid>https://luoxixuan.github.io/gamedevblog.markdown/blog/知识点_006-ECS并行安全的工程实践</guid>
+    </item>
+
+    <item>
+      <title>浅析Unity的ECS模式 — 自研SOA-ECS实战</title>
+      <link>https://luoxixuan.github.io/gamedevblog.markdown/blog/设计模式_001-浅析Unity的ECS模式</link>
+      <description>Unity ECS vs 自研 SOA-ECS、5个ComponentStore设计、行为树预缓存、性能基准</description>
+      <guid>https://luoxixuan.github.io/gamedevblog.markdown/blog/设计模式_001-浅析Unity的ECS模式</guid>
+    </item>
+
+    <item>
+      <title>2D像素法线光照实现 — 八方旅人式 HD-2D</title>
+      <link>https://luoxixuan.github.io/gamedevblog.markdown/blog/知识点_007-2D像素法线光照实现</link>
+      <description>三期方案（程序化色块 → 法线贴图+URP光照 → 后处理）、Python 程序化生成地形贴图</description>
+      <guid>https://luoxixuan.github.io/gamedevblog.markdown/blog/知识点_007-2D像素法线光照实现</guid>
+    </item>
+
+    <item>
+      <title>TCP与UDP在游戏中的应用</title>
+      <link>https://luoxixuan.github.io/gamedevblog.markdown/blog/知识点_003-TCP与UDP在游戏中的应用</link>
+      <description>TCP vs UDP 选择、队头阻塞、MMO/回合制适用性、KCP 中间方案</description>
+      <guid>https://luoxixuan.github.io/gamedevblog.markdown/blog/知识点_003-TCP与UDP在游戏中的应用</guid>
+    </item>
+
+    <item>
+      <title>3D数学基础</title>
+      <link>https://luoxixuan.github.io/gamedevblog.markdown/blog/知识点_005-3D数学基础</link>
+      <description>坐标系、向量矩阵、旋转矩阵、四元数、投影矩阵、MVP 变换链</description>
+      <guid>https://luoxixuan.github.io/gamedevblog.markdown/blog/知识点_005-3D数学基础</guid>
+    </item>
+
+    <item>
+      <title>与AI协作开发的一些经验</title>
+      <link>https://luoxixuan.github.io/gamedevblog.markdown/blog/方法论_003-与AI协作开发的一些经验</link>
+      <description>设计文档先行、AGENTS.md/CHANGELOG.md 编排、分工策略、测试生成</description>
+      <guid>https://luoxixuan.github.io/gamedevblog.markdown/blog/方法论_003-与AI协作开发的一些经验</guid>
+    </item>
+
+    <item>
+      <title>MMO的战斗同步框架</title>
+      <link>https://luoxixuan.github.io/gamedevblog.markdown/blog/框架设计_001-MMO的战斗同步框架</link>
+      <description>MMO 状态同步、客户端预测、技能前摇调整、场景流式加载</description>
+      <guid>https://luoxixuan.github.io/gamedevblog.markdown/blog/框架设计_001-MMO的战斗同步框架</guid>
+    </item>
+  </channel>
+</rss>
